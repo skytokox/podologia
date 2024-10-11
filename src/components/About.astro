@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import dwojka from "../images/dwojka.jpg";
+---
+
+<div
+    class="text-[#576081] w-full h-4/6 flex flex-col justify-center items-center"
+    id="about"
+>
+    <div class="w-full h-full flex flex-row justify-center items-center">
+        <Image
+            src={dwojka}
+            alt="Renata Duda-Błasiak i Sebastian Błasiak"
+            class="w-4/12 h-2/3"
+        />
+        <div
+            class="flex flex-row items-start justify-center h-full w-36"
+        >
+            <p class="text-h2 font-bold h-full pt-5">O NAS</p>
+        </div>
+        <div class="text-h6 w-4/12 h-2/3 text-balance flex flex-row items-center justify-center">
+            <p>
+                Jesteśmy podologami z Cieszyna. Stworzyliśmy specjalistyczny
+                gabinet z myślą o osobach, dla których ważne są zdrowie i w
+                pełni sprawne stopy. Pomoc i wsparcie znajdują u nas zarówno
+                osoby z problemami stóp, jak i te, które oczekują fachowej
+                pielęgnacji na najwyższym poziomie. Dzięki specjalistycznej
+                edukacji i ciągłemu wzbogacaniu wiedzy i umiejętnością,latom
+                doświadczeń,uczestnictwie w szkoleniach i kongresach naukowych
+                nasze zabiegi są zgodne z najnowszą wiedzą podologiczną i
+                pozwalają na skuteczne,inowacyjne rozwiązywanie problemów. W
+                naszym gabinecie możecie być Państwo spokojni o swoje
+                bezpieczeństwo ,przestrzegamy zasad higieny , wszystkie
+                narzędzia używane podczas zabiegu poddawane są procesowi
+                sterylizacji.Do zabiegów wykorzystywane są materiały
+                jednorazowe,opatrunkowe, dezynfekcyjne wyłącznie renomowanych
+                firm. Pomoc,profilatyka i poradnictwo są dla nas najważniejsze
+            </p>
+        </div>
+    </div>
+</div>
