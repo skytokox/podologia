@@ -15,7 +15,7 @@ import {
 import 'vue-flux/style.css';
 const options = shallowReactive({
     autoplay: true,
-    height: '400px',
+    // height: '400px',
 });
 const rscs = shallowReactive([
     new Img('/images/img1.jpg', 'img 1'),
@@ -27,7 +27,7 @@ const transitions = shallowReactive([Swipe]);
 </script>
 
 <template>
-    <div class="w-full h-2/3 relative">
+    <div class="w-full h-1/3 sm:h-2/3 relative">
         <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux" class="h-full">
 
             <template #preloader="preloaderProps">
@@ -50,9 +50,9 @@ const transitions = shallowReactive([Swipe]);
                 <FluxIndex v-bind="indexProps" />
             </template> -->
         </VueFlux>
-        <div class="absolute text-white w-1/2 h-1/3 top-1/3 left-36 z-20 flex flex-col gap-4">
-            <p class="text-h1 font-bold">GABINET <br> PODOLOGICZNY</p>
-            <p class="text-h4">Renata Duda-Błasiak Sebastian Błasiak</p>
+        <div class="absolute text-white w-1/2 h-1/3 top-1/3 left-8 sm:left-36 z-20 flex flex-col gap-4">
+            <p class="text-h6 sm:text-h1 font-bold">GABINET <br> PODOLOGICZNY</p>
+            <p class="text-p sm:text-h4">Renata Duda-Błasiak Sebastian Błasiak</p>
         </div>
     </div>
 </template>
