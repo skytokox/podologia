@@ -1,16 +1,13 @@
 ---
 import Carousel from "../components/Carousel.vue";
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import Tiles from "../components/Tiles.astro";
 import About from "../components/About.astro";
-import Footer from "../components/Footer.astro";
 import Contact from "../components/Contact.astro";
 ---
 <Layout title="Index">
-	<Header />
+  	<Carousel client:load />
 	<Tiles />
 	<About />
 	<Contact />
-	<Footer />
 </Layout>
