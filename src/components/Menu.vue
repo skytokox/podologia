@@ -11,7 +11,7 @@ watch(isOpened, () => {
 </script>
 
 <template>
-    <button @click="isOpened = !isOpened">
+    <button @click="isOpened = !isOpened" aria-label="modal menu">
         <slot></slot>
     </button>
 
