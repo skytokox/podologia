@@ -28,7 +28,7 @@ const transitions = shallowReactive([Swipe]);
 </script>
 
 <template>
-    <div class="w-full h-1/3 sm:h-2/3 relative">
+    <div class="w-full h-1/3 sm:h-2/3 relative" id="gallery">
         <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux" class="h-full z-20">
 
             <!-- <template #preloader="preloaderProps">
