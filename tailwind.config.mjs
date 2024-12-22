@@ -22,6 +22,15 @@ export default {
 			'h2': '2.488rem',
 			'h1': '2.986rem'
 		},
+		keyframes: {
+			slide: {
+				'0%': { transform:'translate(-400px)' },
+				'100%': { transform: 'translate(0px)' }
+			}
+		},
+		animation: {
+			slide: "slide 0.5s ease-in-out"
+		},
 		extend: {},
 	},
 	plugins: [],
