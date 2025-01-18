@@ -20,15 +20,18 @@ const options = shallowReactive({
 });
 const rscs = shallowReactive([
     new Img('/images/img1.jpg', 'img 1'),
-    new Img('/images/img2.jpg', 'img 1'),
-    new Img('/images/img3.jpg', 'img 1'),
+    new Img('/images/img2.jpeg', 'img 2'),
+    new Img('/images/img3.jpg', 'img 3'),
+    new Img('/images/img4.jpeg', 'img 4'),
+    // new Img('/images/img5.jpeg', 'img 5'),
+    // new Img('/images/img6.jpeg', 'img 6'),
 ]);
 
 const transitions = shallowReactive([Swipe]);
 </script>
 
 <template>
-    <div class="w-full h-1/3 sm:h-2/3 relative scroll-m-24" id="gallery">
+    <div class="w-full h-1/3 sm:h-2/3 relative scroll-m-24">
         <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux" class="h-full z-20">
 
             <!-- <template #preloader="preloaderProps">
