@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Wkładki ortopedyczne'
-image: '../../images/dwojka.jpg'
+image: '../images/obrazek2.jpg'
 starter: 'Najczęstsze zastosowanie wkładek:'
 steps: [
 'płaskostopie podłużne',

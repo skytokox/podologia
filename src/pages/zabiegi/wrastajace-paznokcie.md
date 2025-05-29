@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Wrastające paznokcie'
-image: '../../images/dwojka.jpg'
+image: '../images/obrazek2.jpg'
 steps: []
 starter: 'Czym jest wrastający paznokieć?'
 text_1: '

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Rekonstrukcja paznokcia'
-image: '../../images/dwojka.jpg'
+image: '../images/obrazek2.jpg'
 steps: []
 starter: 'Na czym polega zabieg rekonstrukcji paznokcia?'
 text_1: '

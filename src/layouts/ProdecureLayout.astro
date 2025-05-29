@@ -1,65 +1,73 @@
 ---
 const { frontmatter } = Astro.props;
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import dwojka from "../images/dwojka.jpg";
-import img6 from "../images/img6.jpg";
+const images = import.meta.glob("../images/*.{jpg,png,webp}", { eager: true });
 let image;
 let imagestr: string = frontmatter.image;
-console.log(frontmatter.image);
-if (imagestr.includes("img6")) {
-	image = img6;
-} else {
-	image = dwojka;
-}
+image = images[imagestr];
 ---
 
 <Layout title={frontmatter.name}>
-	<div class="w-full h-fit mb-8 flex flex-col items-center justify-center pt-3">
-		<div class="flex flex-row justify-center items-center text-center">
-			<p
-				class="text-h3"
-			>
-				{frontmatter.name}
-			</p>
-		</div>
-		<Image
-			src={image}
-			alt="Renata Duda-Błasiak i Sebastian Błasiak"
-			width="1600"
-			height="900"
-			class="w-4/5 h-2/5 xl:h-1/5 xl:w-1/3 pt-3 rounded-lg"
-		/>
-		<!-- <Image
-			src={image}
-			alt="Renata Duda-Błasiak i Sebastian Błasiak"
-			class="h-72 w-full pt-3"
-		/> -->
-		<div class="w-full flex flex-col justify-evenly items-center gap-3 pt-3 px-3">
-			<div
-				class="w-full break-words text-p sm:text-h6 xl:w-2/5 text-pretty h-2/3 flex flex-col gap-2 items-start justify-center"
-			>
-				<p class="text-h6 font-semibold">
-					{frontmatter.starter}
-				</p>
-				<ul class="list-disc pl-5 w-full">
-					{frontmatter.steps.map((step) => <li>{step}</li>)}
-				</ul>
-				<p class="text-p">
-					{frontmatter.text_1}
-				</p>
-				<p class="text-p">
-					{frontmatter.text_2}
-				</p>
-				<p class="text-p">
-					{frontmatter.text_3}
-				</p>
-				<p class="text-p">
-					{frontmatter.text_4}
+	<div
+		class="w-full h-fit mb-8 flex flex-col items-center justify-center pt-3"
+	>
+		<div class="flex flex-col items-center gap-4">
+			<div class="flex justify-center items-center">
+				<p class="md:text-h3 text-h4 text-center">
+					{frontmatter.name}
 				</p>
 			</div>
-			<div class="flex flex-row justify-center">
-				<p class="text-h6"><a href="/">Powrót</a></p>
+			<div
+				class="flex md:flex-row flex-col w-full mx-4 md:w-4/5 h-fit justify-center items-center md:items-start gap-10 pt-3"
+			>
+				<div class="relative">
+					<img
+						src={image?.default.src}
+						alt="Renata Duda-Błasiak i Sebastian Błasiak"
+						class="w-64 md:w-96 h-2/5 rounded-xl"
+					/>
+					<div
+						class="w-20 h-20 md:h-24 md:w-24 bg-light-gray -z-10 block absolute -top-5 -left-5 rounded-xl"
+					>
+					</div>
+					<div
+						class="w-20 h-20 md:h-24 md:w-24 bg-light-green -z-10 block absolute -bottom-5 -right-5 rounded-xl"
+					>
+					</div>
+				</div>
+				<div
+					class="w-full md:w-1/2 px-8 flex flex-col justify-evenly items-center gap-3 md:px-3"
+				>
+					<div
+						class="w-full break-words text-h6 sm:text-h6 text-pretty flex flex-col gap-2 items-start justify-center"
+					>
+						<p class="text-h6 font-semibold">
+							{frontmatter.starter}
+						</p>
+						<ul class="list-disc pl-5 w-full">
+							{
+								frontmatter.steps.map((step) => (
+									<li class="text-p">{step}</li>
+								))
+							}
+						</ul>
+						<p class="text-p">
+							{frontmatter.text_1}
+						</p>
+						<p class="text-p">
+							{frontmatter.text_2}
+						</p>
+						<p class="text-p">
+							{frontmatter.text_3}
+						</p>
+						<p class="text-p">
+							{frontmatter.text_4}
+						</p>
+					</div>
+					<div class="pt-5 flex flex-row justify-center">
+						<p class="text-h6"><a href="/">Powrót</a></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

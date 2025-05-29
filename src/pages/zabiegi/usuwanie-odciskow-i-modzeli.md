@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Usuwanie odcisków i modzeli'
-image: '../../images/dwojka.jpg'
+image: '../images/obrazek2.jpg'
 starter: 'Odciski i modzele to bolesne zgrubienia na skórze stóp, które powstają z rozmaitych przyczyn, takich jak:'
 steps: [
 'otarcia podczas okazjonalnych wydarzeń, np. wycieczki w góry',

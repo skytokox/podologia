@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Podstawowy zabieg podologiczny'
-image: '../../images/dwojka.jpg'
+image: '../images/obrazek1.jpg'
 starter: 'Jak wygląda zabieg?'
 steps: ['dokładnym wywiadzie podologicznym', 'oczyszczeniu zrogowaciałego naskórka', 'oczyszczeniu wałów paznokciowych', 'opracowaniu płytki paznokciowej', 'dodatkowo: usuwanie odcisków, modzeli, terapie indywidualne w zależności od indywidualnych potrzeb każdego pacjenta', 'dobranie i zaaplikowanie odpowiedniego preparatu, opatrunku'
 ]

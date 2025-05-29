@@ -11,9 +11,10 @@ export default {
 			'light-gray': '#656F8C',
 			'white': '#FFFFFF',
 			'black': '#000000',
-			'creamy': '#FAF1F0'
+			'creamy': '#ecedf1'
 		},
 		fontSize: {
+			'sm': '0.83rem',
 			'p': '1rem',
 			'h6': '1.2rem',
 			'h5': '1.44rem',

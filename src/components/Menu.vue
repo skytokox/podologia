@@ -19,6 +19,9 @@ const isOpened = ref(false)
             <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/#tiles">Oferta</a></p>
         </div>
         <div class="w-full flex h-12 items-center justify-center border-b-[1px] border-opacity-30 border-gray">
+            <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/cennik">Cennik</a></p>
+        </div>
+        <div class="w-full flex h-12 items-center justify-center border-b-[1px] border-opacity-30 border-gray">
             <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/#gallery">Galeria</a></p>
         </div>
         <div class="w-full flex h-12 items-center justify-center border-b-[1px] border-opacity-30 border-gray">

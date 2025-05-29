@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Konsultacja'
-image: '../../images/img6.jpg'
+image: '../images/obrazek2.jpg'
 steps: ['przeprowadzenie wywiadu', 'badanie wzrokowe']
 description: '
 Jeżeli wiedzą Państwo że konsultacja ma dotyczyć : usunięcia odcisku, brodawki wirusowej, wrastającego paznokcia zalecamy wybrać usługę o takiej samej nazwie jak nazwa Państwa problemu. Po wybraniu usługi np. „usunięcie odcisku” również zostanie przeprowadzona konsultacja oraz zostanie wykonany zabieg.'
