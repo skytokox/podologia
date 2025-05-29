@@ -11,7 +11,8 @@ export default {
 			'light-gray': '#656F8C',
 			'white': '#FFFFFF',
 			'black': '#000000',
-			'creamy': '#FAF1F0'
+			'creamy': '#FAF1F0',
+			'gray-text': '#576081'
 			// 'creamy': 'ecedf1'
 		},
 		fontSize: {
