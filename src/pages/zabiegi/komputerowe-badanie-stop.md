@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Komputerowe badanie stóp'
-image: '../images/obrazek2.jpg'
+image: '../images/badanie.jpg'
 starter: 'Kiedy zaleca się wykonanie komputerowego badania stóp?'
 steps: [
 'deformacji w obrębie stóp',
 'dolegliwości bólowych stóp',
-'kolan i kręgosłupa','zaburzeń równowagi',
+'kolan i kręgosłupa',
+'zaburzeń równowagi',
 'metatarsalgii Mortona (zespołu bólowego, wywoływanego uciskiem nerwów podeszwowych)',
 'często występujących odcisków, modzeli',
 'koślawości lub szpotawości kolan lub kości piętowych',
