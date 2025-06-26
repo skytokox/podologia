@@ -22,7 +22,7 @@ const isOpened = ref(false)
             <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/cennik">Cennik</a></p>
         </div>
         <div class="w-full flex h-12 items-center justify-center border-b-[1px] border-opacity-30 border-gray">
-            <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/#gallery">Galeria</a></p>
+            <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/galeria">Galeria</a></p>
         </div>
         <div class="w-full flex h-12 items-center justify-center border-b-[1px] border-opacity-30 border-gray">
             <p class="text-h6 pl-2"><a @click="isOpened = !isOpened" href="/#about">O nas</a></p>

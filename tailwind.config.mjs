@@ -27,14 +27,19 @@ export default {
 		},
 		keyframes: {
 			slide: {
-				'0%': { transform:'translate(-400px)' },
+				'0%': { transform: 'translate(-400px)' },
 				'100%': { transform: 'translate(0px)' }
 			}
 		},
 		animation: {
 			slide: "slide 0.5s ease-in-out"
 		},
-		extend: {},
+		extend: {
+			screens: {
+				'3xl': '1930px'
+			},
+		},
+
 	},
 	plugins: [],
 	important: true,

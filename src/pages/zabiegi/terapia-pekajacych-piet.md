@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Terapia pękających pięt'
-image: '../images/terapia.jpg'
+image: '../images/terapia_pekajacych_piet.jpg'
 starter: 'Jak wygląda zabieg?'
 steps: []
 text_1: '

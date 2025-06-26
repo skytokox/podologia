@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Podstawowy zabieg podologiczny'
-image: '../images/podstawowy_zabieg.jpg'
+image: '../images/podstawowy_zabieg_podologiczny.jpg'
 starter: 'Jak wygląda zabieg?'
 steps: [
   'dokładny wywiad podologiczny',

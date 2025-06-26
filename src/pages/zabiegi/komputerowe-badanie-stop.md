@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Komputerowe badanie stóp'
-image: '../images/badanie.jpg'
+image: '../images/komputerowe_badanie_stop.jpg'
 starter: 'Kiedy zaleca się wykonanie komputerowego badania stóp?'
 steps: [
 'deformacji w obrębie stóp',
