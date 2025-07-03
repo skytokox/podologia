@@ -34,9 +34,9 @@ const transitions = shallowReactive([Swipe]);
     <div class="w-full h-1/3 sm:h-2/3 relative scroll-m-24">
         <VueFlux :options="options" :rscs="rscs" :transitions="transitions" ref="$vueFlux" class="h-full z-20">
 
-            <template #preloader="preloaderProps">
+            <!-- <template #preloader="preloaderProps">
                 <FluxPreloader v-bind="preloaderProps" />
-            </template>
+            </template> -->
 <!-- 
             <template #caption="captionProps">
                 <FluxCaption v-bind="captionProps" />
