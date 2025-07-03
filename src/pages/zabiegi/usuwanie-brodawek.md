@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/ProdecureLayout.astro
 name: 'Usuwanie brodawek'
-image: '../images/usuwanie_brodawek.jpg'
+image: '../images/brodawka1.jpg'
+image2: '../images/brodawka2.jpg'
 starter: 'Jak wygląda zabieg?'
 steps: []
 text_1: '

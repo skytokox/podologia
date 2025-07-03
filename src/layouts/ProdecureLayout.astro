@@ -2,9 +2,11 @@
 const { frontmatter } = Astro.props;
 import Layout from "../layouts/Layout.astro";
 const images = import.meta.glob("../images/*.{jpg,png,webp}", { eager: true });
-let image;
+let image, image2;
 let imagestr: string = frontmatter.image;
-image = images[imagestr];
+let imagestr2: string = frontmatter.image2;
+image = images[imagestr]
+image2 = images[imagestr2];
 ---
 
 <Layout title={frontmatter.name}>
@@ -13,7 +15,9 @@ image = images[imagestr];
 	>
 		<div class="w-full flex flex-col items-center gap-4">
 			<div class="flex justify-center items-center">
-				<p class="md:text-h3 text-h4 text-center font-bold text-gray-text">
+				<p
+					class="md:text-h3 text-h4 3xl:text-h2 text-center font-bold text-gray-text"
+				>
 					{frontmatter.name}
 				</p>
 			</div>
@@ -21,17 +25,31 @@ image = images[imagestr];
 				class="flex md:flex-row flex-col w-full mx-4 md:w-4/5 h-fit justify-center items-center md:items-start gap-10 pt-3"
 			>
 				<div class="relative">
+					{image2?.default.src && <div class="flex flex-row w-fit">
+						<img
+							src={image?.default.src}
+							alt="Renata Duda-Błasiak i Sebastian Błasiak"
+							class="w-36 lg:w-44 2xl:w-72 3xl:w-96 max-h-[60vh] rounded-l-xl"
+						/>
+						<img
+							src={image2?.default.src}
+							alt="Renata Duda-Błasiak i Sebastian Błasiak"
+							class="w-36 lg:w-44 2xl:w-72 3xl:w-96 max-h-[60vh] rounded-r-xl"
+						/>
+					</div>}
+					{!image2?.default.src && 						
 					<img
-						src={image?.default.src}
-						alt="Renata Duda-Błasiak i Sebastian Błasiak"
-						class="w-64 md:w-96 h-2/5 rounded-xl"
-					/>
+							src={image?.default.src}
+							alt="Renata Duda-Błasiak i Sebastian Błasiak"
+							class="w-64 md:w-96 3xl:w-[20vw] max-h-[60vh] rounded-xl"
+						/>
+						}
 					<div
-						class="w-20 h-20 md:h-24 md:w-24 bg-light-gray -z-10 block absolute -top-5 -left-5 rounded-xl"
+						class="w-20 h-20 md:h-24 md:w-24 3xl:h-32 3xl:w-32 bg-light-gray -z-10 block absolute -top-5 -left-5 3xl:-top-8 3xl:-left-8 rounded-xl"
 					>
 					</div>
 					<div
-						class="w-20 h-20 md:h-24 md:w-24 bg-light-green -z-10 block absolute -bottom-5 -right-5 rounded-xl"
+						class="w-20 h-20 md:h-24 md:w-24 3xl:h-32 3xl:w-32 bg-light-green -z-10 block absolute -bottom-5 -right-5 3xl:-bottom-8 3xl:-right-8 rounded-xl"
 					>
 					</div>
 				</div>
@@ -41,31 +59,31 @@ image = images[imagestr];
 					<div
 						class="w-full break-words text-h6 sm:text-h6 text-pretty flex flex-col gap-2 items-start justify-center"
 					>
-						<p class="text-h6 font-semibold text-gray-text">
+						<p class="text-h6 3xl:text-h4 font-semibold text-gray-text">
 							{frontmatter.starter}
 						</p>
-						<ul class="list-disc pl-5 w-full">
+						<ul class="list-disc pl-5 w-full 3xl:text-h5">
 							{
 								frontmatter.steps.map((step) => (
 									<li class="text-p">{step}</li>
 								))
 							}
 						</ul>
-						<p class="text-p">
+						<p class="text-p 3xl:text-h5">
 							{frontmatter.text_1}
 						</p>
-						<p class="text-p">
+						<p class="text-p 3xl:text-h5">
 							{frontmatter.text_2}
 						</p>
-						<p class="text-p">
+						<p class="text-p 3xl:text-h5">
 							{frontmatter.text_3}
 						</p>
-						<p class="text-p">
+						<p class="text-p 3xl:text-h5">
 							{frontmatter.text_4}
 						</p>
 					</div>
 					<div class="pt-5 flex flex-row justify-center">
-						<p class="text-h6 font-bold"><a href="/">Powrót</a></p>
+						<p class="text-h6 3xl:text-h4 font-bold"><a href="/">Powrót</a></p>
 					</div>
 				</div>
 			</div>
