@@ -16,15 +16,14 @@ import 'vue-flux/style.css';
 // import { isOpened } from './Menu.vue'
 const options = shallowReactive({
     autoplay: true,
-    // height: '400px',
+    lazyLoadAfter: 1,
+    lazyLoad: true,
 });
 const rscs = shallowReactive([
     new Img('/images/img1.jpg', 'img 1'),
     new Img('/images/img2.jpeg', 'img 2'),
     new Img('/images/img3.jpg', 'img 3'),
     new Img('/images/img4.jpeg', 'img 4'),
-    // new Img('/images/img5.jpeg', 'img 5'),
-    // new Img('/images/img6.jpeg', 'img 6'),
 ]);
 
 const transitions = shallowReactive([Swipe]);
