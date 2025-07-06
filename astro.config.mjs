@@ -9,5 +9,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), vue(), icon(), sitemap()],
-  site: 'https://podologiacieszyn.pl',
+  site: 'https://podologcieszyn.pl',
 });
