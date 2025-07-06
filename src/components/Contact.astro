@@ -29,7 +29,7 @@ import { Icon } from "astro-icon/components";
                 </div>
                 <div class="flex flex-row justify-start items-center gap-4">
                     <Icon name="mdi:phone" class="3xl:text-h1 text-h3 sm:text-h2 text-black" />
-                    <p class="3xl:text-h5 text-p sm:text-h6"><a href="tel:+48512475825"></a>512 475 825</p>
+                    <p class="3xl:text-h5 text-p sm:text-h6"><a href="tel:+48512475825" id="telefon"></a>512 475 825</p>
                 </div>
                 <div class="flex flex-row justify-start items-center gap-4">
                     <Icon name="mdi:facebook" class="3xl:text-h1 text-h3 sm:text-h2 text-black" />
@@ -43,6 +43,7 @@ import { Icon } from "astro-icon/components";
                     class="gmap_iframe"
                     width="100%"
                     title="google map"
+                    loading="lazy"
                     src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Beauty Room Cieszyn&t=&z=15&ie=UTF8&iwloc=B&output=embed"
                 ></iframe><a href="https://linktr.ee/sparklesyt">sparklesyt</a>
             </div><style>

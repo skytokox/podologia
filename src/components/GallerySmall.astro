@@ -1,5 +1,11 @@
 ---
-
+import { Image } from "astro:assets";
+import img4 from "../images/img4.jpeg";
+import img1 from "../images/img1.jpg";
+import img2 from "../images/img2.jpeg";
+import zdj3 from "../images/zdj3.jpg";
+import img6 from "../images/img6.jpeg";
+import img3 from "../images/img3.jpg";
 ---
 
 <div
@@ -12,40 +18,24 @@
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-light-green border-opacity-60 box-border"
             >
-                <img
-                    src="/images/img4.jpeg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={img4} alt="Galeria img4" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-light-green border-opacity-60 box-border"
             >
-                <img
-                    src="/images/img1.jpg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={img1} alt="Galeria img1" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
         </div>
         <div class="flex flex-col gap-2 justify-center items-center h-fit">
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-gray border-opacity-40 box-border"
             >
-                <img
-                    src="/images/img2.jpeg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={img2} alt="Galeria img2" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-gray border-opacity-40 box-border"
             >
-                <img
-                    src="/images/zdj3.jpg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={zdj3} alt="Galeria zdj3" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
             <div
                 class="w-fit py-3 px-8 h-10 3xl:h-12 bg-light-gray bg-opacity-80 rounded-2xl flex flex-row items-center justify-center"
@@ -59,20 +49,12 @@
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-light-violet border-opacity-60 box-border"
             >
-                <img
-                    src=" /images/img6.jpeg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={img6} alt="Galeria img6" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
             <div
                 class="border-[6px] lg:border-[8px] 3xl:border-[12px] rounded-xl border-light-violet border-opacity-60 box-border"
             >
-                <img
-                    src="/images/img3.jpg"
-                    class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg"
-                    alt="skibidi"
-                />
+                <Image src={img3} alt="Galeria img3" class="h-auto max-w-48 xl:max-w-sm 3xl:max-w-lg 3xl:w-lg" />
             </div>
         </div>
     </div>
@@ -82,68 +64,44 @@
             <div
                 class="border-[10px] rounded-xl border-gray border-opacity-40 box-border w-fit"
             >
-                <img
-                    src="/images/img2.jpeg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={img2} alt="Galeria zdjęcie szkielet" class="h-auto max-w-xs" />
             </div>
             <div
                 class="border-[10px] rounded-xl border-light-green border-opacity-60 box-border"
             >
-                <img
-                    src="/images/zdj3.jpg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={zdj3} alt="Galeria zdjęcie gabinet" class="h-auto max-w-xs" />
             </div>
         </div>
         <div class="grid gap-1.5 h-fit">
             <div
                 class="border-[10px] rounded-xl border-light-violet border-opacity-60 box-border"
             >
-                <img
-                    src="/images/img4.jpeg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={img4} alt="Galeria zdjęcie Renata Duda Błasiak Sebastian Błasiak" class="h-auto max-w-xs" />
             </div>
             <div
                 class="border-[10px] rounded-xl border-gray border-opacity-40 box-border"
             >
-                <img
-                    src="/images/img1.jpg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={img1} alt="Galeria zdjęcie piłowanie paznokcia" class="h-auto max-w-xs" />
             </div>
         </div>
         <div class="flex flex-col justify-center items-center gap-1.5 h-fit">
             <div
                 class="border-[10px] rounded-xl border-light-green border-opacity-60 box-border"
             >
-                <img
-                    src=" /images/img6.jpeg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={img6} alt="Galeria zdjęcie zabieg stopy" class="h-auto max-w-xs" />
             </div>
             <div
                 class="border-[10px] rounded-xl border-light-violet border-opacity-60 box-border"
             >
-                <img
-                    src="/images/img3.jpg"
-                    class="h-auto max-w-xs"
-                    alt="skibidi"
-                />
+                <Image src={img3} alt="Galeria zdjęcie obcinanie paznokcia" class="h-auto max-w-xs" />
             </div>
-                    <div
-            class="w-fit mt-2 py-2 px-12 h-10 3xl:h-12 bg-light-gray bg-opacity-80 rounded-2xl flex flex-row items-center justify-center"
-        >
-            <p class="text-h6 3xl:text-h4 text-white">
-                <a href="/galeria">Zobacz więcej</a>
-            </p>
-        </div>
+            <div
+                class="w-fit mt-2 py-2 px-12 h-10 3xl:h-12 bg-light-gray bg-opacity-80 rounded-2xl flex flex-row items-center justify-center"
+            >
+                <p class="text-h6 3xl:text-h4 text-white">
+                    <a href="/galeria">Zobacz więcej</a>
+                </p>
+            </div>
         </div>
     </div>
 </div>
